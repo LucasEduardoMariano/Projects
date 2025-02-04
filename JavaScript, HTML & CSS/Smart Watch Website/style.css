@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #FFFFFF, #DBDBDB); /* Cores irradiam a partir do centro */
+
+}
+
+.interface{
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #4FD6C1;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+header a{
+    color: #6c6c6c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #454545;
+    transform: scale(1.10);
+    font-weight: bold; 
+}
+
+header nav ul{
+    list-style-type: none;   
+    position: absolute;
+    top: 30px;
+    left: 100px; 
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;   
+}
+
+
+.first h1{
+    color: #454545;
+    font-size: 76px;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+
+.first h2{
+    color: #F8814E;
+    font-size: 40px;
+    width: 500px;
+    position: absolute;
+    top: 370px;
+    left: 100px;
+    
+}
+
+.first button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    line-height: 1.6;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.product-input {
+    border-radius: 20px;
+    width: 100vh;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-left: 12px;
+}
+
+.search-form {
+    display: flex;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 500px;
+    margin-top: -10px;
+    margin-left: 25%;
+
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.search-form button {
+    border-radius: 20px;
+    width: 15vh;
+    border: none;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: rgb(133, 133, 133);
+    transform: scale(1.07);
+}
+
+.product-list {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card imagem {
+    max-width: 200%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: rgb(0, 77, 128);
+
+}
+
+.product-card .product-price {
+    color: rgb(44, 160, 44);
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.product-card .product-store {
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}

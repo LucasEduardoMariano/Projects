@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidenav {
+    width: 300px;
+    background-color: #121212;
+    padding: 12px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+.nav-library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #b7b3b6;
+}
+
+.nav-library i,
+.nav-library p {
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.nav-box1,
+.nav-box2 {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.nav-box1 h2,
+.nav-box2 h2 {
+    font-size: 14px;
+}
+
+.nav-box1 p,
+.nav-box2 p {
+    font-size: 10px;
+}
+
+.nav-box1 button,
+.nav-box2 button {
+    font-size: 12px;
+    padding: 6px 10px;
+    margin-top: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-box3 {
+    margin-top: auto;
+}
+
+.nav-box3 a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+.nav-box3 button {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 8px 12px;
+    color: white;
+    margin-top: 16px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+main {
+    padding: 24px;
+    background-color: #242424;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: -10px;
+    margin-left: 30%;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.content h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 15px;
+
+}
+
+.artist-card,
+.album-card {
+
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.artist-card:hover,
+.album-card:hover {
+    background-color: #282828;
+}
+
+
+
+.artist-grid,
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0px;
+    margin-bottom: 20px;
+}
+
+.artist-card img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 1;
+}
+
+.album-card img {
+    width: 80%;
+    border-radius: 5%;
+    margin-bottom: 1;
+}
+
+.artist-card p, .album-card p {
+    font-size: 10px;
+}
+
+.artist-card h3, .album-card h3 {
+    font-size: 15px;
+}
+
+
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #AF2896, #509bf5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner h2 {
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.banner p {
+    font-size: 10px;
+    margin-left: 12px;
+}
+
+.banner button{
+    border-radius: 20px;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    font-weight: 600;
+    margin-right: 12px;
+    cursor: pointer;
+}
