@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Background</title>
+
+</head>
+<body>
+    <main>
+        <h1>Background</h1>
+        <button onclick="changecolor('Yellow')">Yellow</button>
+        <button onclick="changecolor('blue')">Blue</button>
+        <button onclick="changecolor('red')">Red</button>
+        <button onclick="randomColor()">Random</button>
+        <br />
+        <input placeholder="Color name or #HEX" type="text" class="color-input">
+        <button onclick="PersonalColor()">apply the color</button>
+        <input type="color" onchange="changecolor(this.value)">
+        <br />
+        <label>
+            Image
+            <input type="file" accept="image/*" onchange="chooseImagem(this.files[0])">
+        </label>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
